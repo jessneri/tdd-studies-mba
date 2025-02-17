@@ -24,3 +24,5 @@ class TestUser:
         user_id = uuid4()
         with pytest.raises(Exception, match="Name is required."):
             User(id=user_id, name="")
+
+    
